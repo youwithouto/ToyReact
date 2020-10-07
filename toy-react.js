@@ -63,13 +63,6 @@ export class Component {
         this.render()[RENDER_TO_DOM](range);
     }
 
-    get root() {
-        if (!this._root) {
-            this._root = this.render().root;
-        }
-        return this._root;
-    }
-
     rerender() {
         let oldRange = this._range;
 
